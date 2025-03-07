@@ -246,11 +246,14 @@ function vidPlay() {
 function toggleMenu() {
 
   var navbarMenu = document.getElementById('navbar-mobile');
+  var btnMenu = document.getElementById('menu-mobile-none')
 
   if (navbarMenu.style.display === 'none') {
     navbarMenu.style.display = 'flex';
+    btnMenu.style.display = 'none'
   } else {
     navbarMenu.style.display = 'none';
+    btnMenu.style.display = 'flex'
   }
 
 }

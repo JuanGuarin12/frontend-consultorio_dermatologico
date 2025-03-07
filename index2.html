@@ -27,7 +27,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
 
 </head>
 
@@ -44,10 +44,31 @@
     </div>
   </div>
 
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <nav id="navbar" class="navbar">
+
+        <a class="derma a" href="#hero"><img src="assets/img/CONSULTORIODERMATOLOGICO_LOGO.png"></a>
+        <a class="nav-link a inicio" href="#hero"><img src="assets/img/home-color.png">&nbspInicio</a>
+        <a class="nav-link a servicios" href="#services"><img src="assets/img/services-color%7D.png">&nbspServicios</a>
+        <a class="nav-link a contactanos" href="#contact"><img src="assets/img/contact.png">&nbspContáctenos</a>
+        <a class="nav-link a ubicacion" href="#ubicacion"><img src="assets/img/location.png">&nbspUbicación</a>
+        <a class="nav-link a testimonio" href="#testi"><img src="assets/img/testi.png">&nbspTestimonnios</a>
+
+        <a class="a btn" href="login.html">Iniciar sesión</a>
+        <a class="a btn" href="login.html">Registrarse</a>
+
+      </nav>
+    </div>
+
+  </header>
+
   <header id="mobile">
-    <i id="menu-mobile" class="bi bi-list" onclick="toggleMenu()"></i>
+    <i id="menu-mobile-none" class="bi bi-list" onclick="toggleMenu()"></i>
 
     <nav id="navbar-mobile" class="navbar-mobile">
+      <i id="menu-mobile" class="bi bi-list" onclick="toggleMenu()"></i>
 
       <a class="" href="#hero"><img src="assets/img/home-color.png">&nbspInicio</a>
       <a class="" href="#services"><img src="assets/img/services-color%7D.png">&nbspServicios</a>
@@ -59,37 +80,9 @@
       <a href="login.html" class="appointment-btn-mobile"><span class="">Iniciar Sesión</span></a>
 
     </nav>
-
   </header>
 
 
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-
-        <a class="derma" href="#hero"><img src="assets/img/CONSULTORIODERMATOLOGICO_LOGO.png"></a>
-        <div class="d-flex flex-row consulta">
-          <a class="nav-link scrollto " href="#hero"><img src="assets/img/home-color.png">&nbspInicio</a>
-          <a class="nav-link scrollto" href="#services"><img src="assets/img/services-color%7D.png">&nbspServicios</a>
-          <a class="nav-link scrollto" href="#contact"><img src="assets/img/contact.png">&nbspContáctenos</a>
-          <a class="nav-link scrollto" href="#ubicacion"><img src="assets/img/location.png">&nbspUbicación</a>
-          <a href="#testi"><img src="assets/img/testi.png">&nbspTestimonnios</a>
-
-
-      </nav>
-
-      <div class="container-btns.index2">
-        <a href="login.html" class="appointment-btn-index2">Registrarse</a>
-        <a href="login.html" class="appointment-btn-index2">Iniciar sesión</a>
-      </div>
-
-    </div>
-
-    </div>
-  </header>
-
-  <!-- ======= Hero Section ======= -->
   <section id="heroo" class="video">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
@@ -111,12 +104,10 @@
       </div>
     </div>
 
-  </section><!-- End Hero -->
-
+  </section>
 
   <main id="main">
 
-    <!-- ======= Services Section ======= -->
     <section id="services" class="services services">
       <div class="container" data-aos="fade-up">
 
@@ -271,7 +262,7 @@
         </section><!-- End Testimonials Section -->
       </div>
     </section>
-    <!-- ======= ubicacion Section ======= -->
+
     <section id="ubicacion" class="contact">
       <div class="container">
 
@@ -289,7 +280,7 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
-    <!-- ======= Contact Section ======= -->
+
     <section id="contact" class="contact">
       <div class="container">
 
@@ -304,19 +295,18 @@
                 <div class="info-box">
                   <i class='bx bx-network-chart'></i>
                   <h3>Redes sociales</h3>
-                  <br>
-                  <a href="https://twitter.com/ConsultorioDer2" class="twitter  contacto"><i
-                      class="bx bxl-twitter contacto"></i></a>
-                  <a href="https://www.facebook.com/profile.php?id=100087007223254" class="facebook contacto"><i
-                      class="bx bxl-facebook"></i></a>
-                  <a href="https://www.instagram.com/dermatologico_e.j.e/" class="instagram contacto"><i
-                      class="bx bxl-instagram"></i></a>
-                  <br>
-                  <div class="d-flex flex-row contactos">
-                    <p class="icon1"><strong> Twitter</strong></p>
-                    <p class="icon2"><strong>Facebook</strong></p>
-                    <p class="icon3"><strong>Instagram</strong></p>
+
+                  <div class="container-icons">
+                    <a href="https://twitter.com/ConsultorioDer2" class="icons">
+                      <i class="bx bxl-twitter"></i></a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100087007223254" class="icons">
+                      <i class="bx bxl-facebook"></i></a>
+
+                    <a href="https://www.instagram.com/dermatologico_e.j.e/" class="icons">
+                      <i class="bx bxl-instagram"></i></a>
                   </div>
+
                 </div>
               </div>
               <div class="col-md-6">
@@ -370,8 +360,6 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">Acerca de nosotros</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Servicios</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Términos de servicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Política de privacidad</a></li>
             </ul>
           </div>
         </div>
